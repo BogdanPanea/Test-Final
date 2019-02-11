@@ -24,7 +24,7 @@ public class CopyFromFileToArray {
             }
         } catch (IOException e) {
             e.printStackTrace();
-        }System.out.println(packages);
+        }
         return packages;
 
     }

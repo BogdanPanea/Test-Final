@@ -29,4 +29,14 @@ public class Package {
     public String getDate() {
         return date;
     }
+
+    @Override
+    public String toString() {
+        return "Package{" +
+                "targetLocation='" + targetLocation + '\'' +
+                ", targetDistance=" + targetDistance +
+                ", value=" + value +
+                ", date='" + date + '\'' +
+                '}';
+    }
 }
