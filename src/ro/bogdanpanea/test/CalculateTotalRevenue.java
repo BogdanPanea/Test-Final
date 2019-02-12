@@ -3,7 +3,7 @@ package ro.bogdanpanea.test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CalculateTotalRevenue implements Runnable {
+public class CalculateTotalRevenue {
 
     private List<Package> packages = new ArrayList<>();
     private int totalRevenue;
@@ -20,9 +20,5 @@ public class CalculateTotalRevenue implements Runnable {
         }
 
         return totalRevenue;
-    }
-
-    public void run() {
-        System.out.println("Veniturile totale sunt in valoare de " + totalRevenue() + " RON");
     }
 }

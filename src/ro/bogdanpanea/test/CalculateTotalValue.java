@@ -3,7 +3,7 @@ package ro.bogdanpanea.test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CalculateTotalValue implements Runnable {
+public class CalculateTotalValue {
 
     private List<Package> packages = new ArrayList<>();
     private int totalValue;
@@ -20,9 +20,5 @@ public class CalculateTotalValue implements Runnable {
         }
 
         return totalValue;
-    }
-
-    public void run() {
-        System.out.println("Valoarea totala a coletelor este " + totalValue() + " RON");
     }
 }

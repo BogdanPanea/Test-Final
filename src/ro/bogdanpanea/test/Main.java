@@ -28,14 +28,11 @@ public class Main {
 
 
         CalculateTotalValue calculateTotalValue = new CalculateTotalValue(packageList);
-        Thread t = new Thread(calculateTotalValue);
-        t.start();
+        System.out.println(calculateTotalValue.totalValue());
 
 
         CalculateTotalRevenue calculateTotalRevenue = new CalculateTotalRevenue(packageList);
-        Thread t1 = new Thread(calculateTotalRevenue);
-        t1.setPriority(4);
-        t1.start();
+        System.out.println(calculateTotalRevenue.totalRevenue());
 
     }
 }
