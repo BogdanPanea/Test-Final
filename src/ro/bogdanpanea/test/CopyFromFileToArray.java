@@ -9,7 +9,7 @@ import java.util.List;
 
 public class CopyFromFileToArray {
 
-    private String csvFile = "SourceFile" + File.separator + "PackageData.csv";
+    private String csvFile = "SourceFile" + File.separator + "packagedata.csv";
     private String line = "";
     private String cvsSplitBy = ",";
     private List<Package> packages = new ArrayList<>();
