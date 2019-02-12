@@ -3,12 +3,12 @@ package ro.bogdanpanea.test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PackageSending {
+public class GroupedPackageSending {
 
     private List<DataAboutGroupedPackage> dataAboutGroupedPackages;
     private List<Thread> threads = new ArrayList<>();
 
-    public PackageSending(List<DataAboutGroupedPackage> dataAboutGroupedPackages) {
+    public GroupedPackageSending(List<DataAboutGroupedPackage> dataAboutGroupedPackages) {
         this.dataAboutGroupedPackages = dataAboutGroupedPackages;
     }
 

@@ -15,10 +15,10 @@ public class Main {
 
 
         GroupPackages groupPackages = new GroupPackages(packageList);
-        PackageSending packageSending = new PackageSending(groupPackages.returnGroupOfPackages());
-        packageSending.sendTruck();
+        GroupedPackageSending groupedPackageSending = new GroupedPackageSending(groupPackages.returnGroupOfPackages());
+        groupedPackageSending.sendTruck();
 
-        for (Thread thread : packageSending.getThreads()) {
+        for (Thread thread : groupedPackageSending.getThreads()) {
             try {
                 thread.join();
             } catch (InterruptedException e) {
@@ -28,11 +28,11 @@ public class Main {
 
 
         CalculateTotalValue calculateTotalValue = new CalculateTotalValue(packageList);
-        System.out.println(calculateTotalValue.totalValue());
+        System.out.println("Valoarea totale a coletelor este de " + calculateTotalValue.totalValue() + " RON");
 
 
         CalculateTotalRevenue calculateTotalRevenue = new CalculateTotalRevenue(packageList);
-        System.out.println(calculateTotalRevenue.totalRevenue());
+        System.out.println("Venituri totale in valoare de " + calculateTotalRevenue.totalRevenue() + " RON");
 
     }
 }
