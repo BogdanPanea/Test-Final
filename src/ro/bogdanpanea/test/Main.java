@@ -16,7 +16,7 @@ public class Main {
 
         GroupPackages groupPackages = new GroupPackages(packageList);
         GroupedPackageSending groupedPackageSending = new GroupedPackageSending(groupPackages.returnGroupOfPackages());
-        groupedPackageSending.sendTruck();
+        groupedPackageSending.sendPackage();
 
         for (Thread thread : groupedPackageSending.getThreads()) {
             try {

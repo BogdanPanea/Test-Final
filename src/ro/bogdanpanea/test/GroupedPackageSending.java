@@ -16,7 +16,7 @@ public class GroupedPackageSending {
         return threads;
     }
 
-    public void sendTruck() {
+    public void sendPackage() {
 
         for (DataAboutGroupedPackage p : dataAboutGroupedPackages) {
 
